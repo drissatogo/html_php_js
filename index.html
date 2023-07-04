@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer></script>
+  <title>Inscription</title>
+</head>
+<body>
+  
+    <img  id="photo" class="imageCompte" src="avatar.webp" alt="photo">
+    <img style="width: 10%;" src="oeil.webp" alt="photo">
+  <h1>Inscription des apprenants</h1>
+  <form onsubmit="onSubmit()">
+    <div class="contenerInput">
+      <div class="formGroupeG">
+        <label for="nom">Nom </label><br>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom </label><br>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="email">Email </label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Age </label><br>
+        <input type="text" id="age" name="age" required><br><br>
+        <input style="width: 23%;" type="submit" value="Enregistrer">
+      </div>
+      <div class="formGroupeD">
+        <label for="date_de_naissance">Date_de_Naissance </label><br>
+        <input type="date" id="date_de_naissance" name="date_de_naissance" required><br>
+
+        <label for="promotion">Promotion </label><br>
+        <input type="text" id="promotion" name="promotion" required><br>
+
+        <label for="annee_de_certification">Année de Certification </label><br>
+        <input type="text" id="année_de_certification" name="année_de_certification" required><br>
+
+        <label for="numero">Numéro </label><br>
+        <input type="text" id="numero" name="numero" required><br><br>
+        <input style="width: 20%;" type="submit" value="Annuler">
+      </div>
+      <input type="file" id="file" accept="image/*" name="image" style="display: none;">
+    </div>
+  </form>
+ 
+</body>
+</html>
